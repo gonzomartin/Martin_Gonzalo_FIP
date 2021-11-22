@@ -12,7 +12,10 @@ div {
     font-family: GeromaRegular;
   }
 
-
+.logo {
+    width: 50px;
+    height: 50px;
+}
 .main {
     background-color: black;
     width: 100vw;
@@ -42,6 +45,9 @@ div {
 .link-text {
     font-family: GeromaBold;
     color: aliceblue;
+    margin: 0%;
+    padding: 0 0 5px 10px;
+    font-size: 18pt;
 }
 
 .nav-links {
@@ -54,18 +60,27 @@ div {
 
 .nav-button {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     margin: 0 0 0 50px;
-    align-items: flex-end;
+    align-items: flex-start;
     transition: all .2s ease-in-out;
 }
 
+.nav-button:hover .square {
+    width: calc(100% + 10px);
+}
+
 .nav-button:hover {
-    background-color: rgb(148, 148, 148);
+    cursor: pointer;
+}
+
+.link-text:hover {
+    color: cornflowerblue;
 }
 
 .square {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: aliceblue;
+    transition: all .2s ease-in-out;
 }
