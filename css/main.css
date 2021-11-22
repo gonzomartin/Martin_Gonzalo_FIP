@@ -8,7 +8,8 @@
     src: url("../Assets/font/Georama-Bold.ttf");
   }  
 
-  .main {
+.main {
+    position: relative;
     background-color: rgb(224, 211, 211);
     width: 100vw;
     display: flex;
@@ -28,6 +29,9 @@
 }
 
 .navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -81,7 +85,5 @@
 /* Nav Bar Setup Finish */
 
 .first-banner {
-    width: 100%;
-    height: 300px;
-    background-color: black;
+    position: absolute;
 }
