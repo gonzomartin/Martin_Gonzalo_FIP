@@ -8,82 +8,106 @@
     src: url("../Assets/font/Georama-Bold.ttf");
   }  
 
-.main {
-    position: relative;
-    background-color: rgb(224, 211, 211);
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
+@supports (grid-area: auto) {
 
-/* Nav Bar Setup Start */
+    .homepage {
+        background-color: rgb(35, 31, 32);
+        display: grid
+    }
 
-.logo {
-    width: 50px;
-    height: 50px;
-}
-  
-.title {
-    font-family: GeromaRegular;
-    color: white;
-}
+    header {
+        position: sticky;
+        top: 0px;
+        background-color: rgb(35, 31, 32);
+    }
 
-.navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 30px;
-    background: linear-gradient(to bottom, rgba(15, 15, 15, 1), rgba(15, 15, 15, .4) 65%, rgba(0, 0, 0, 0));
-}
+    .mainpage {
+        display: grid;
+		grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+    }
+    
+    .one-item {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: 1fr;
+    }
 
-.link-text {
-    font-family: GeromaBold;
-    color: aliceblue;
-    margin: 0%;
-    padding: 0 0 5px 10px;
-    font-size: 18pt;
-}
+    .two-items {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
+    }
 
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-}
+    .three-items {
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        row-gap: 2em;
+        column-gap: 2em;
+    }
 
-.nav-button {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 50px;
-    align-items: flex-start;
-    transition: all .2s ease-in-out;
-}
+    /* Nav Bar Setup Start */
 
-.nav-button:hover .square {
-    width: calc(100% + 10px);
-}
+    .head {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+    }
 
-.nav-button:hover {
-    cursor: pointer;
-}
+    .shortlogo {
+        grid-column: 1 / span 1;
+    }
 
-.link-text:hover {
-    color: cornflowerblue;
-}
+    .shortlogo svg {
+        width: 40px;
+        margin: 10px;
+    }
 
-.square {
-    width: 8px;
-    height: 8px;
-    background-color: aliceblue;
-    transition: all .2s ease-in-out;
-}
+    .nav {
+        grid-column: 2 / span 3;
+        padding: 0 30px 0 0;
+    }
 
-/* Nav Bar Setup Finish */
+    nav ul {
+        margin: 0px;
+        padding: 0px;
+        text-align: right;
+    }
 
-.first-banner {
-    position: absolute;
+    nav li {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: GeromaBold;
+    }
+
+    nav li:hover .square {
+        width: calc(100% + 8px)
+    }
+
+    nav li:hover {
+        cursor: pointer;
+    }
+
+    .square {
+        width: 8px;
+        height: 8px;
+        background-color: aliceblue;
+        transition: all .2s ease-in-out;
+    }
+
+    /* Nav Bar Setup Finish */
+
+    .initialBg {
+        display: grid;
+        grid-column: span 4;
+    }
 }
