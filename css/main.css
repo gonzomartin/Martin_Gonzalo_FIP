@@ -20,6 +20,11 @@ Tags: Memories museum of myslef.
 
 @supports (grid-area: auto) {
 
+    h1, h2, h3, h4, p {
+        margin: 0;
+        padding: 0px;
+    }
+
     .hidden {
         display: none;
     }
@@ -27,7 +32,8 @@ Tags: Memories museum of myslef.
 
     .homepage {
         background-color: rgb(35, 31, 32);
-        display: grid
+        display: grid;
+        margin:  0;
     }
 
     header {
@@ -58,9 +64,8 @@ Tags: Memories museum of myslef.
 
     .three-items {
         display: grid;
-        grid-column: 2 / span 2;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: space-evenly;
+        justify-content: center;
         row-gap: 2em;
         column-gap: 2em;
     }
@@ -78,7 +83,7 @@ Tags: Memories museum of myslef.
 
     .shortlogo svg {
         width: 40px;
-        margin: 10px;
+        padding: 20px;
     }
 
     .nav {
@@ -123,9 +128,26 @@ Tags: Memories museum of myslef.
 
     /* Body Setup Working */
 
-    .InitialBg {
+    .initial-section {
+        display: grid;
+    }
+
+    .initialBg {
         grid-column: span 4;
     }
+
+    .museumlogo {
+        grid-column: 2 / span 2;
+
+    }
+
+    .museumlogo svg {
+        display: grid;
+        align-content: center;
+        padding-bottom: 50px;
+        width: 500px;
+    }
+
 
     .Subtitles {
         font-family: GeromaRegular;
@@ -135,11 +157,84 @@ Tags: Memories museum of myslef.
 
     .Highlights {
         grid-column: 1 / span 1;
+        padding: 20px;
     }
 
     .Highlights h3 span {
         font-family: GeromaBold;
         font-size: 25px;
         
+    }
+
+    .highlights-gallery {
+        display: grid;
+        align-content: space-around;
+    }
+
+    .highlights-gallery h4 {
+        font-family: GeromaBold;
+        color: #ffffff;
+    }
+
+    .highlights-gallery img {
+        justify-content: space-around;
+    }
+
+    .highlights-gallery p {
+        font-family: GeromaRegular;
+        color: #ffffff;
+    }
+
+    .boxborder {
+        width: 550px;
+        height: 656px;
+        border: 2px;
+        border-color: #d3d3d3;
+    }
+
+    .memories-banner {
+        display: grid;
+        grid-column: span 4;
+        justify-content: left;
+        padding: 100px 20px 100px 20px;
+    }
+
+    .collections {
+        grid-column: 1;
+        padding: 20px;
+    }   
+    
+    .collections h3 {
+        font-family: GeromaBold;
+        font-size: 25px;
+    }
+
+    .gridline {
+        display: grid;
+    }
+
+    .bottom-line {
+        grid-column: 1 / span 1;
+        padding: 20px;
+        border-bottom: 2px solid rgb(199, 199, 199);
+        width: 1800px;
+    }
+
+    .who-i-am {
+        display: grid;
+        grid-row: 6;
+    }
+
+    .portrait {
+        display: grid;
+        grid-column: 1;
+    }
+    
+    .portrait img {
+        width: 800px;
+    }
+
+    .text {
+        grid-column: 2
     }
 }
