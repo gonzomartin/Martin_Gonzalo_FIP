@@ -11,12 +11,17 @@ Tags: Memories museum of myslef.
 @font-face {
     font-family: GeromaRegular;
     src: url("../Assets/font/Georama-Regular.ttf");
-  }
+}
+
+@font-face {
+    font-family: GeromaLight;
+    src: url("../Assets/font/Georama-Light.ttf");
+}
 
 @font-face {
     font-family: GeromaBold;
     src: url("../Assets/font/Georama-Bold.ttf");
-  }  
+}  
 
 @supports (grid-area: auto) {
 
@@ -31,6 +36,7 @@ Tags: Memories museum of myslef.
 
 
     .homepage {
+        max-width: none;
         background-color: rgb(35, 31, 32);
         display: grid;
         margin:  0;
@@ -150,9 +156,10 @@ Tags: Memories museum of myslef.
 
 
     .Subtitles {
-        font-family: GeromaRegular;
+        font-family: GeromaLight;
         font-size: 18px;
         color: #ffffff;
+        padding-bottom: 20px;
     }
 
     .Highlights {
@@ -162,8 +169,7 @@ Tags: Memories museum of myslef.
 
     .Highlights h3 span {
         font-family: GeromaBold;
-        font-size: 25px;
-        
+        font-size: 25px;       
     }
 
     .highlights-gallery {
