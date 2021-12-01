@@ -8,239 +8,332 @@ Tags: Memories museum of myslef.
 
 
 
-@font-face {
-    font-family: GeromaRegular;
-    src: url("../Assets/font/Georama-Regular.ttf");
-}
 
-@font-face {
-    font-family: GeromaLight;
-    src: url("../Assets/font/Georama-Light.ttf");
-}
+/* _____________________________________
 
-@font-face {
-    font-family: GeromaBold;
-    src: url("../Assets/font/Georama-Bold.ttf");
-}  
+   01. General Styles
+   _____________________________________ */
 
-@supports (grid-area: auto) {
+
+/*---------- Reset ---------------------*/
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+        font-family: 'GeromaRegular', serif;
+    }
 
     h1, h2, h3, h4, p {
         margin: 0;
-        padding: 0px;
+        padding: 0;
     }
+
+/*------------ End Reset ------------*/
+
+/*--------------- General ------------------*/
 
     .hidden {
         display: none;
     }
 
-
-    .homepage {
-        max-width: none;
-        background-color: rgb(35, 31, 32);
-        display: grid;
-        margin:  0;
-    }
-
-    header {
-        position: sticky;
-        top: 0px;
-        background-color: rgb(35, 31, 32);
-    }
-
-    .mainpage {
-        display: grid;
-		grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
-    }
-    
-    .one-item {
-        display: grid;
-        grid-column: 2 / span 2;
-        grid-template-columns: 1fr;
-    }
-
-    .two-items {
-        display: grid;
-        grid-column: 2 / span 2;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-evenly;
-        row-gap: 2em;
-        column-gap: 2em;
-    }
-
-    .three-items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        row-gap: 2em;
-        column-gap: 2em;
-    }
-
-    /* Nav Bar Setup Start */
-
-    .head {
-        display: grid;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
-    }
-
-    .shortlogo {
-        grid-column: 1 / span 1;
-    }
-
-    .shortlogo svg {
-        width: 40px;
-        padding: 20px;
-    }
-
-    .nav {
-        grid-column: 2 / span 3;
-        padding: 0 30px 0 0;
-    }
-
-    nav ul {
-        margin: 0px;
-        padding: 0px;
-        text-align: right;
-    }
-
-    nav li {
-        display: inline-block;
-        padding: 20px;
-    }
-
-    nav li a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 16px;
-        font-family: GeromaBold;
-    }
-
-    nav li:hover .square {
-        width: calc(100% + 8px)
-    }
-
-    nav li:hover {
-        cursor: pointer;
-    }
-
-    .square {
-        width: 8px;
-        height: 8px;
-        background-color: aliceblue;
-        transition: all .2s ease-in-out;
-    }
-
-    /* Nav Bar Setup Finish */
-
-    /* Body Setup Working */
-
-    .initial-section {
-        display: grid;
-    }
-
-    .initialBg {
-        grid-column: span 4;
-    }
-
-    .museumlogo {
-        grid-column: 2 / span 2;
-
-    }
-
-    .museumlogo svg {
-        display: grid;
-        align-content: center;
-        padding-bottom: 50px;
-        width: 500px;
-    }
-
-
-    .Subtitles {
-        font-family: GeromaLight;
-        font-size: 18px;
-        color: #ffffff;
-        padding-bottom: 20px;
-    }
-
-    .Highlights {
-        grid-column: 1 / span 1;
-        padding: 20px;
-    }
-
-    .Highlights h3 span {
-        font-family: GeromaBold;
-        font-size: 25px;       
-    }
-
-    .highlights-gallery {
-        display: grid;
-        align-content: space-around;
-    }
-
-    .highlights-gallery h4 {
-        font-family: GeromaBold;
-        color: #ffffff;
-    }
-
-    .highlights-gallery img {
-        justify-content: space-around;
-    }
-
-    .highlights-gallery p {
+    @font-face {
         font-family: GeromaRegular;
-        color: #ffffff;
+        src: url("../Assets/font/Georama-Regular.ttf");
     }
 
-    .boxborder {
-        width: 550px;
-        height: 656px;
-        border: 2px;
-        border-color: #d3d3d3;
+    @font-face {
+        font-family: GeromaLight;
+        src: url("../Assets/font/Georama-Light.ttf");
     }
 
-    .memories-banner {
-        display: grid;
-        grid-column: span 4;
-        justify-content: left;
-        padding: 100px 20px 100px 20px;
-    }
-
-    .collections {
-        grid-column: 1;
-        padding: 20px;
-    }   
-    
-    .collections h3 {
+    @font-face {
         font-family: GeromaBold;
-        font-size: 25px;
-    }
+        src: url("../Assets/font/Georama-Bold.ttf");
+    } 
 
-    .gridline {
-        display: grid;
-    }
+/*--------------- End General --------------*/
 
-    .bottom-line {
-        grid-column: 1 / span 1;
-        padding: 20px;
-        border-bottom: 2px solid rgb(199, 199, 199);
-        width: 1800px;
-    }
+/* _____________________________________
 
-    .who-i-am {
-        display: grid;
-        grid-row: 6;
-    }
+   02. CSS Grid
+   _____________________________________ */
 
-    .portrait {
-        display: grid;
-        grid-column: 1;
-    }
-    
-    .portrait img {
-        width: 800px;
-    }
 
-    .text {
-        grid-column: 2
-    }
-}
+     
+
+    @supports (grid-area: auto) {
+
+
+        .homepage {
+            max-width: none;
+            background-color: rgb(35, 31, 32);
+        }
+
+        .head, .foot {
+            display: grid;
+			grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            background-color: rgb(35, 31, 32);
+        }
+
+        
+        .one-item {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: 1fr;
+        }
+
+        .two-items {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
+        .three-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
+        /* Nav Bar Setup Start */
+
+        .head {
+            display: grid;
+            grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+        }
+
+        .shortlogo {
+            grid-column: 1 / span 1;
+        }
+
+        .shortlogo svg {
+            width: 40px;
+            padding: 15px;
+        }
+
+        .nav {
+            grid-column: 2 / span 3;
+            padding: 0 20px 0 0;
+        }
+
+        nav ul {
+            margin: 0px;
+            padding: 0px;
+            text-align: right;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-family: GeromaBold;
+            margin-left: 7px;
+        }
+
+        nav li:hover .square {
+            width: calc(100% + 7px)
+        }
+
+        nav li:hover {
+            cursor: pointer;
+        }
+
+        .square {
+            width: 7px;
+            height: 7px;
+            background-color: rgb(255, 255, 255);
+            transition: all .2s ease-in-out;
+        }
+
+        /* Nav Bar Setup Finish */
+
+        /* Initial seccion start */
+
+        .initial-section {
+            display: grid;
+            margin: 0 0;
+        }
+
+        .initialBg img {
+            width: 100%;
+        }
+
+        .initialBg {
+            display: grid;
+            grid-column: 1 / 4;
+            margin-bottom: 20px;
+        }
+
+
+        .initialBg svg {
+            align-self: flex-start;
+            justify-self: center;
+            padding-bottom: 50px;
+            width: 500px;
+        }
+
+
+        .Subtitles {
+            font-family: GeromaLight;
+            font-size: 18px;
+            color: #ffffff;
+            padding-bottom: 20px;
+        }
+
+        /* highlights gallery start */
+
+        .h-lighter , .h-embordery , .h-stamp {
+            display: grid;
+
+            justify-content: center;
+            box-sizing: content-box;
+        }
+
+        .h-lighter:hover , .h-embordery:hover , .h-stamp:hover {
+            outline: 2px solid rgb(255, 255, 255);
+            max-width: 470px;
+            max-height: 780px;
+            margin: 0;
+        }
+
+        .h-block {
+            max-width: 430px;
+            background: rgb(255, 255, 255);
+            padding: 0;
+        }
+
+        .h-block h4 {
+            color: rgb(35, 31, 32);
+            padding: 30px 0 0 30px;
+            font-family: GeromaBold;
+            font-size: 40px;
+        }
+
+        .h-block p {
+            color: rgb(35, 31, 32);
+            padding: 0 30px 10px 30px;
+        }
+
+        .h-block img {
+            width: 40px;
+            padding: 10px 0 30px 360px;
+        }
+
+        .Highlights {
+            grid-column: 1;
+            padding: 20px;
+        }
+
+        
+        /* Memories Banner */
+
+        .memories-banner {
+            display: grid;
+            grid-column: span 4;
+            justify-content: left;
+            padding: 100px 20px 100px 20px;
+        }
+
+        /* Collections */
+
+        .collections {
+            grid-column: 1;
+            padding: 20px;
+        }   
+        
+        .collections h3 {
+            font-family: GeromaBold;
+            font-size: 25px;
+        }
+
+        .gridline {
+            display: grid;
+        }
+
+        .bottom-line {
+            grid-column: 1 / span 1;
+            padding: 20px;
+            border-bottom: 2px solid rgb(199, 199, 199);
+            width: 1800px;
+        }
+
+        .c-postal , .c-ticket , .c-fingo {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1 fr;
+            justify-content: center;
+        }
+
+        .postal-block {
+            position: absolute;
+            max-width: 380px;
+            background: rgb(35, 31, 32);
+            padding: 0;
+            right: 110px;
+            bottom: 70px;
+        }
+
+        .c-fingo .postal-block{
+            max-width: 390px;
+            right: 105px;
+        }
+
+        .postal-block h4 {
+            padding: 30px 0 0 30px;
+            font-family: GeromaBold;
+            font-size: 40px;
+        }
+
+        .postal-block p {
+            padding: 0 30px 0 30px;
+        }
+
+        .postal-block svg {
+            width: 40px;
+            padding: 20px 0 30px 300px;
+        }
+
+        /* Who i Am */
+
+        .who-i-am {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .portrait {
+            grid-column: 2 / span 2;
+        }
+        
+        .portrait img {
+            width: 100%;
+        }
+
+        .who-i-am-title {
+            font-family: GeromaBold;
+            font-size: 25px;
+        }
+        
+        .who-p p {
+            font-size: 15px;
+        }
+
+        .who-p span {
+            font-family: GeromaBold;
+        }
+
+    }    
