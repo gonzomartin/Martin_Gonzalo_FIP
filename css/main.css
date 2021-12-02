@@ -181,20 +181,15 @@ Tags: Memories museum of myslef.
         }
 
 
-        .initialBg svg {
+        .initialBg .inisec-logomu {
             align-self: flex-start;
             justify-self: center;
             padding-bottom: 50px;
-            width: 500px;
+            max-width: 500px;
         }
 
 
-        .Subtitles {
-            font-family: GeromaLight;
-            font-size: 18px;
-            color: #ffffff;
-            padding-bottom: 20px;
-        }
+        
 
         /* highlights gallery start */
 
@@ -205,7 +200,13 @@ Tags: Memories museum of myslef.
         }
 
         .h-hover:hover {
+            transform: scale(1.05);
+        }
+
+        .h-hover {
             outline: 2px solid rgb(255, 255, 255);
+            padding: 20px;
+            transition: all .2s ease-in-out;
         }
 
         .h-block {
@@ -237,14 +238,40 @@ Tags: Memories museum of myslef.
             padding: 20px;
         }
 
+        .Subtitles {
+            font-family: GeromaLight;
+            font-size: 25px;
+            color: #ffffff;
+        }
+
+        .Subtitles span {
+            font-family: GeromaBold;
+            font-size: 30px;
+        } 
+
+        .borderline {
+            border-bottom: 2px solid #ffffff;
+            margin-left: 120px;
+            margin-bottom: 5px;
+        }
+
+        .h-borderline {
+            padding-bottom: 50px;
+        }
+
+
+
         
         /* Memories Banner */
 
         .memories-banner {
             display: grid;
             grid-column: span 4;
-            justify-content: left;
             padding: 100px 20px 100px 20px;
+        }
+
+        .memories-banner img {
+            max-width: 100%;
         }
 
         /* Collections */
@@ -256,7 +283,7 @@ Tags: Memories museum of myslef.
         
         .collections h3 {
             font-family: GeromaBold;
-            font-size: 25px;
+            font-size: 30px;
         }
 
         .gridline {
@@ -323,7 +350,7 @@ Tags: Memories museum of myslef.
 
         .who-i-am-title {
             font-family: GeromaBold;
-            font-size: 25px;
+            font-size: 30px;
         }
         
         .who-p p {
