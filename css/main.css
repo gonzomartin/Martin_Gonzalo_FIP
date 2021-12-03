@@ -111,6 +111,7 @@ Tags: Memories museum of myslef.
         .head {
             display: grid;
             grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+            border-bottom: 1px solid #6e6e6e;
         }
 
         .shortlogo {
@@ -119,8 +120,10 @@ Tags: Memories museum of myslef.
 
         .shortlogo svg {
             width: 40px;
-            padding: 15px;
+            padding: 20px;
         }
+
+
 
         .nav {
             grid-column: 2 / span 3;
@@ -204,7 +207,7 @@ Tags: Memories museum of myslef.
         }
 
         .h-hover {
-            outline: 2px solid rgb(255, 255, 255);
+            outline: 2px solid rgb(199, 199, 199);
             padding: 20px;
             transition: all .2s ease-in-out;
         }
@@ -250,7 +253,7 @@ Tags: Memories museum of myslef.
         } 
 
         .borderline {
-            border-bottom: 2px solid #ffffff;
+            border-bottom: 2px solid rgb(199, 199, 199);;
             margin-left: 120px;
             margin-bottom: 5px;
         }
@@ -259,6 +262,7 @@ Tags: Memories museum of myslef.
             padding-bottom: 50px;
         }
 
+        
 
 
         
@@ -280,6 +284,15 @@ Tags: Memories museum of myslef.
             grid-column: 1;
             padding: 20px;
         }   
+
+        .c-borderline .borderline {
+            border-bottom: 2px solid rgb(199, 199, 199);;
+            margin-left: 170px;
+        }
+
+        .c-borderline {
+            padding-bottom: 30px;
+        }
         
         .collections h3 {
             font-family: GeromaBold;
