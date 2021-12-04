@@ -1,54 +1,464 @@
-.main {
-    background-color: black;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-  
-.first-banner {
-    width: 100%;
-    height: 300px;
-    background-color: black;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 52% 100%, 0 81%);
-}
-  
-.title {
-    color: white;
-}
+/*
+Style Name: Site Build 
+Description: Final Integraded Project
+Author: Gonzalo Martin 
+Version: 1.0
+Tags: Memories museum of myslef.
+*/
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 30px;
-}
 
-.link-text {
-    color: aliceblue;
-}
 
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-}
 
-.nav-button {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 0 0 0 50px;
-    align-items: flex-end;
-    transition: all .2s ease-in-out;
-}
+/* _____________________________________
 
-.nav-button:hover {
-    background-color: rgb(148, 148, 148);
-}
+   01. General Styles
+   _____________________________________ */
 
-.square {
-    width: 10px;
-    height: 10px;
-    background-color: aliceblue;
-}
+
+/*---------- Reset ---------------------*/
+
+    body {
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+        font-family: 'GeromaRegular', serif;
+    }
+
+    h1, h2, h3, h4, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        margin: 0;
+        padding: 0;
+    }
+
+/*------------ End Reset ------------*/
+
+/*--------------- General ------------------*/
+
+    .hidden {
+        display: none;
+    }
+
+    @font-face {
+        font-family: GeromaRegular;
+        src: url("../Assets/font/Georama-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: GeromaLight;
+        src: url("../Assets/font/Georama-Light.ttf");
+    }
+
+    @font-face {
+        font-family: GeromaBold;
+        src: url("../Assets/font/Georama-Bold.ttf");
+    } 
+
+/*--------------- End General --------------*/
+
+/* _____________________________________
+
+   02. CSS Grid
+   _____________________________________ */
+
+
+     
+
+    @supports (grid-area: auto) {
+
+
+        .homepage {
+            max-width: none;
+            background-color: rgb(35, 31, 32);
+        }
+
+        .head {
+            display: grid;
+			grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+            background-color: rgb(35, 31, 32);
+            z-index: 5;
+        }
+
+        
+        .one-item {
+            display: grid;
+            grid-column: 2 / span 2;
+            grid-template-columns: 1fr;
+        }
+
+        .two-items {
+            display: grid;
+            
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-evenly;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
+        .three-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            row-gap: 2em;
+            column-gap: 2em;
+        }
+
+        /* Nav Bar Setup Start */
+
+        .head {
+            display: grid;
+            grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+            border-bottom: 1px solid #6e6e6e;
+        }
+
+        .shortlogo {
+            grid-column: 1 / span 1;
+        }
+
+        .shortlogo img {
+            width: 40px;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+
+
+
+        .nav {
+            grid-column: 2 / span 3;
+            padding: 0 0 0 0;
+        }
+
+        nav ul {
+            margin: 0px;
+            padding: 0px;
+            text-align: right;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-family: GeromaBold;
+            margin-left: 7px;
+        }
+
+        nav li:hover .square {
+            width: calc(100% + 7px)
+        }
+
+        nav li:hover {
+            cursor: pointer;
+        }
+
+        .square {
+            width: 7px;
+            height: 7px;
+            background-color: rgb(255, 255, 255);
+            transition: all .2s ease-in-out;
+        }
+
+        /* Nav Bar Setup Finish */
+
+        /* Initial seccion start */
+
+        .initial-section {
+            display: grid;
+            margin: 0 0;
+        }
+
+        .initialBg img {
+            width: 100%;
+        }
+
+        .initialBg {
+            display: grid;
+            grid-column: 1 / 4;
+            margin-bottom: 20px;
+        }
+
+
+        .initialBg .inisec-logomu {
+            align-self: flex-start;
+            justify-self: center;
+            padding-bottom: 50px;
+            max-width: 500px;
+        }
+
+
+        
+
+        /* highlights gallery start */
+
+        .h-lighter , .h-embordery , .h-stamp {
+            display: grid;
+            justify-content: center;
+            box-sizing: content-box;
+        }
+
+        .h-hover:hover {
+            transform: scale(1.05);
+        }
+
+        .h-hover {
+            outline: 2px solid rgb(199, 199, 199);
+            padding: 20px;
+            transition: all .2s ease-in-out;
+        }
+
+        .h-block {
+            max-width: 430px;
+            background: rgb(255, 255, 255);
+            padding: 0;
+            margin: 0;
+            margin-top: -10px;
+        }
+
+        .h-block h4 {
+            color: rgb(35, 31, 32);
+            padding: 30px 0 0 30px;
+            font-family: GeromaBold;
+            font-size: 40px;
+        }
+
+        .h-block p {
+            font-size: 15px;
+            color: rgb(35, 31, 32);
+            padding: 0 30px 10px 30px;
+        }
+
+        .h-block img {
+            width: 40px;
+            margin: 10px 0 30px 360px;
+        }
+
+        .Highlights {
+            grid-column: 1;
+            padding: 20px;
+        }
+
+        .Subtitles {
+            font-family: GeromaLight;
+            font-size: 25px;
+            color: #ffffff;
+        }
+
+        .Subtitles span {
+            font-family: GeromaBold;
+            font-size: 30px;
+        } 
+
+        .borderline {
+            border-bottom: 2px solid rgb(199, 199, 199);;
+            margin-left: 120px;
+            /* margin-bottom: 5px; */
+        }
+
+        .h-borderline {
+            padding-bottom: 50px;
+        }
+
+        
+
+
+        
+        /* Memories Banner */
+
+        .memories-banner {
+            display: grid;
+            grid-column: span 4;
+            padding: 100px 20px 100px 20px;
+        }
+
+        .memories-banner img {
+            max-width: 100%;
+        }
+
+        /* Collections */
+
+        .collections {
+            grid-column: 1;
+            padding: 20px;
+        }   
+        
+        .inlineitems {
+            padding: 20px;
+        }
+        .c-borderline .borderline {
+            border-bottom: 2px solid rgb(199, 199, 199);;
+            margin-left: 170px;
+        }
+
+        .c-borderline {
+            padding-bottom: 30px;
+        }
+        
+        .collections h3 {
+            font-family: GeromaBold;
+            font-size: 30px;
+        }
+
+        .gridline {
+            display: grid;
+        }
+
+        .bottom-line {
+            grid-column: 1 / span 1;
+            padding: 20px;
+            border-bottom: 2px solid rgb(199, 199, 199);
+            width: 1800px;
+        }
+
+        .c-postal , .c-ticket , .c-fingo, .c-sketch, .c-university, .c-magnets {
+            position: relative;
+            display: inline;
+            justify-content: center;
+        }
+
+        .postal-block {
+            position: absolute;
+            max-width: 380px;
+            background: rgb(35, 31, 32);
+            padding: 0;
+            right: 110px;
+            bottom: 70px;
+        }
+
+        .c-fingo .postal-block{
+            max-width: 390px;
+            right: 105px;
+        }
+
+        .postal-block h4 {
+            padding: 30px 0 0 30px;
+            font-family: GeromaBold;
+            font-size: 40px;
+        }
+
+        .postal-block p {
+            padding: 0 30px 0 30px;
+        }
+
+        .postal-block img {
+            width: 40px;
+            padding: 20px 0 30px 300px;
+        }
+
+        /* Who i Am */
+
+        .who-i-am {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .portrait {
+            grid-column: 2 / span 2;
+            padding-top: 40px;
+        }
+        
+        .portrait img {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        .who-i-am-title {
+            font-family: GeromaBold;
+            font-size: 30px;
+        }
+
+        .who-p {
+            display: grid;
+            grid-column: 2 / span 2;
+        }
+        
+        .who-p p {
+            font-size: 15px;
+        }
+
+        .who-p span {
+            font-family: GeromaBold;
+        }
+
+        .who-square {
+            display: flex;
+            grid-column: 2 / span 2;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .square2 {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        
+
+/* Footer start */
+
+        .foot {
+            grid-template-columns: 1fr(repeat(3));
+            background-color: #ffffff;
+            display: grid;
+        }
+
+        .f-logo {
+            display: grid;
+            grid-column: 1;
+            max-width: 300px;
+            padding: 20px;
+            padding-left: 640px;
+            padding-right: 0px;
+        }
+        
+        .border-bottom {
+            border:0;
+            border-bottom:1px solid rgb(109, 110, 113);
+            width: 260px;
+        }
+
+        .border-submit {
+            border:0;
+            border: 1px solid rgb(109, 110, 113);
+            margin: 5px;
+            background: #dfdfdf;
+        }
+
+        .border-submit:hover {
+            background: #ffffff;
+        }
+
+        .f-text {
+            font-family: GeromaBold;
+            color: rgb(35, 31, 32);
+            margin-left: 7px;
+        }
+
+        .f-form input {
+            font-family: GeromaLight;
+        } 
+
+        .square1 {
+            width: 8px;
+            height: 8px;
+            background-color: rgb(35, 31, 32);
+            transition: all .2s ease-in-out;
+        }
+        .f-form {
+            display: grid;
+            align-items: center;
+        }
+    }    

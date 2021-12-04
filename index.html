@@ -5,53 +5,194 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>   
     <title>Gonzalo's Museum of Memories and Collections</title>
 </head>
-<body>
-    <main class="main">
-        <nav class="navbar">
-            <div class="logo">
-                <h2 class="link-text">Logo</h2>
-            </div>
-            <div class="nav-links">
-                <div class="nav-button">
-                    <h2 class="link-text">
-                        Hightlights </h2>
-                    <div class="square"> 
-                    </div>
-                </div>
-                <div class="nav-button">
-                    <h2 class="link-text">
-                        Collections
-                    </h2>
-                    <div class="square"> 
-                    </div>
-                </div>
-                <div class="nav-button">
-                    <h2 class="link-text">
-                        Why
-                    </h2>
-                    <div class="square"> 
-                    </div>
-                </div>
-                <div class="nav-button">
-                    <h2 class="link-text">
-                        Donations
-                    </h2>
-                    <div class="square"> 
-                    </div>
-                </div>
-            </div>
+<body class="homepage">
+    <header class="head">
+        <div class="shortlogo">
+            <img src="Assets/G.svg">
+        </div>
+        <nav class="nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Hightlights</a>
+                    <div class="square"></div>
+                </li>
+                <li><a href="index.html">Content</a>
+                    <div class="square"></div>
+                </li>
+                <li><a href="index.html">Why?</a>
+                    <div class="square"></div>
+                </li>
+                <li><a href="index.html">Donate</a>
+                    <div class="square"></div>
+                </li>
+            </ul>
         </nav>
-        <img src="https://via.placeholder.com/2200x840">
-          <div class="first-banner">
-            <h1 class="title">Titulo principal</h1>
-          </div>
-        </main>
-        
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>      
+    </header>
+    <main id="content" class="mainpage">
+        <section class="initial-section">
+            <div class="initialBg">
+                <img src="images/initialBackground.jpg" alt="Collections Collage">
+                <img class="inisec-logomu" src="Assets/logo_museum.svg" alt="Logo Gonzalos Museum">
+            </div>
+        </section>        
+        <section class="Highlights" aria-label="Highligths Pieces">
+            <div class="h-borderline">
+                <h3 class="Subtitles"><span>Highlights Pieces</span></h3>
+                <h3>of the Month.</h3><hr class="borderline">
+                <!-- <div class="borderline"></div>  -->
+                
+            </div>
+            <div class="three-items">
+                <div class="h-lighter">
+                    <div class="h-hover">
+                        <img src="images/Lighter.jpg" alt="FPO">
+                        <div class="h-block">
+                            <h4>Lighter</h4>
+                            <p>Here we going to have a little description of what we are going to find on the postals that i have, and the photo will be also a close up on one of the postals.</p>
+                            <a href="index.html"><img src="Assets/next-buttom-black.svg" alt="BlackBottom"></a>  
+                        </div>
+                    </div>                   
+                </div>
+                <div class="h-embordery">
+                    <div class="h-hover">
+                        <img src="images/Embordery.jpg" alt="FPO">
+                        <div class="h-block">
+                            <h4>Lighter</h4>
+                            <p>Here we going to have a little description of what we are going to find on the postals that i have, and the photo will be also a close up on one of the postals.</p>
+                            <a href="index.html"><img src="Assets/next-buttom-black.svg" alt="BlackBottom"></a>  
+                        </div>
+                    </div>  
+                </div>
+                <div class="h-stamp">
+                    <div class="h-hover">
+                        <img src="images/Stamp.jpg" alt="FPO">
+                        <div class="h-block">
+                            <h4>Lighter</h4>
+                            <p>Here we going to have a little description of what we are going to find on the postals that i have, and the photo will be also a close up on one of the postals.</p>
+                            <a href="index.html"><img src="Assets/next-buttom-black.svg" alt="BlackBottom"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="memories-banner">
+            <div class="one-item">
+                <img src="Assets/memories-keep-us-alive_Mesa de trabajo 1.png" alt="MemoriesKeepsUsAlive">
+            </div>
+        </aside>
+        <section class="collections" aria-label="Collections Galery">
+            <div class="c-borderline">
+                <h3 class="Subtitles">Collections</h3>
+                <div class="borderline"></div>
+            </div>
+            <div class="inlineitems">
+                <div class="c-postal">
+                    <img src="images/Postal-CG.jpg" alt="FPO">
+                    <div class="postal-block">
+                        <h4>Postals</h4>
+                        <p>10+ years of collecting postals of any kind, artists, souvenirs, cinema functions, museum postals,
+                            some of them are one of a kind. </p>
+                        <a href="index.html"><img src="Assets/next-buttom.svg" alt="Next buttom white"></a>
+                    </div>
+                </div>
+                <div class="c-fingo">
+                    <img src="images/don-fingo_2.jpg" alt="FPO">
+                    <div class="postal-block">
+                        <h4>Stickers</h4>
+                        <p>For far the biggest and more diverse collection. Here are really without context stickers that i have collected by years and it keep expanding.</p>
+                        <a href="index.html"><img src="Assets/next-buttom.svg" alt="Next buttom white"></a>
+                    </div>
+                </div>
+                <div class="c-ticket">
+                    <img src="images/Ticket.jpg" alt="FPO">
+                    <div class="postal-block">
+                        <h4>Tickets</h4>
+                        <p>My memories of events that I
+                            have went to. Futbol matches, concerts, museums, cinemas, and more concerts again.</p>
+                        <a href="index.html"><img src="Assets/next-buttom.svg" alt="Next buttom white"></a>
+                    </div>
+                </div>
+                <div class="c-sketch">
+                    <img src="images/Sketch.jpg" alt="FPO">
+                    <div class="postal-block">
+                        <h4>Sketchs</h4>
+                        <p>My memories of events that I
+                            have went to. Futbol matches, concerts, museums, cinemas, and more concerts again.</p>
+                        <a href="index.html"><img src="Assets/next-buttom.svg" alt="Next buttom white"></a>
+                    </div>
+                </div>
+                <div class="c-university">
+                    <img src="images/University.jpg" alt="FPO">
+                    <div class="postal-block">
+                        <h4>University</h4>
+                        <p>My memories of events that I
+                            have went to. Futbol matches, concerts, museums, cinemas, and more concerts again.</p>
+                        <a href="index.html"><img src="Assets/next-buttom.svg" alt="Next buttom white"></a>
+                    </div>
+                </div>
+                <div class="c-magnets">
+                    <img src="images/Magnets.jpg" alt="FPO">
+                    <div class="postal-block">
+                        <h4>Magnets</h4>
+                        <p>My memories of events that I
+                        have went to. Futbol matches, concerts, museums, cinemas, and more concerts again.</p>
+                        <a href="index.html"><img src="Assets/next-buttom.svg" alt="Next buttom white"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gridline">
+                <div class="bottom-line"></div>
+            </div>
+        </section>
+        <section class="who-i-am">
+            <div class="portrait">
+                <img src="images/portrait-100.jpg" alt="selfportrait">
+                <h3 class="who-i-am-title">Who I Am?</h3>
+            </div>
+            <div class="two-items who-p">
+                <div>
+                    <p><span>Hi to anyone who got here. First than anything nice to meet you, becouse if you are looking in to this web, you’ll know a lot about me soon.</span><br><br>I’m 25 years old, I was born in Cali, Colombia, and raised in Palmira. Since I was a little kid I’ve always been really into artistic and manual stuff, my passion when I was a youngman was playing with clay, i used to do it everyday with my dad, he was the real artist at that time. Since then as any other human I have been going through different circumstances and now I'm a professional Visual Communication Designer from the Javeriana University in Cali, Colombia and nowadays I'm studying Interactive Media Design at Fanshawe College in Canada, hell a trip.</p>
+                </div>
+                <div>
+                    <p>I am purely a music lover, therefore i have gone to every music concert that i could, and want of course, mostly all of them are music in Spanish, Rock, Reggae, Skap, Rap, Instrumental, etc. The music develop on me a feeling of independence when i was a teenager, and i start to doing exactly the opposite as my parents told me to do, so i decided to be an asshole for a while, and at this point i started collecting things that will give me a remembrance of greats moment in my sadly punk life, then i found again the art path, and i fell in love with editorial design, and found another world in the middle of the university where everything were stickers, posters, fanzines, magazines, weird books, CD’s, t-shirts, and pretty much a lot of hours of works in everything that I saw, I this web page is just what I have been available so save since 2010.  </p>
+                </div>
+            </div> 
+            <div class="who-square">
+                <h3 class="hidden">square</h3>
+                <div class="square2"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="foot">
+        <div class="two-items">
+            <div class="f-logo">
+                <img src="Assets/logo-museum-negative.svg" alt="logo-museum-negative">
+            </div>
+            <div class="f-form">
+                <div>
+                    <div>
+                        <h3 class="f-text">Want to donate? We contact you!</h3>
+                        <div class="square1"></div>
+                    </div>
+                    <form action="email.php" method="POST" enctype="text/plain">
+                        <input class="border-bottom" name="contactInfo" type="text" required placeholder="Email">
+                        <input class="border-submit" name="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+    $('.inlineitems').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+    });
+</script>
 </body>
