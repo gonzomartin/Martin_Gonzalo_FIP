@@ -206,14 +206,14 @@ Tags: Memories museum of myslef.
         }
 
         .h-hover:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             outline: 2px solid rgb(199, 199, 199);
         }
 
         .h-hover {
             
             padding: 20px;
-            transition: all .2s ease-in-out;
+            transition: all .15s ease-in-out;
         }
 
         .h-block {
@@ -264,7 +264,7 @@ Tags: Memories museum of myslef.
 
         .borderline {
             border-bottom: 2px solid rgb(199, 199, 199);;
-            margin-left: 120px;
+            margin-left: 150px;
             margin-bottom: 5px;
 
         }

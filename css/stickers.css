@@ -225,6 +225,8 @@ Tags: Memories museum of myslef.
 
     /* Sort and Filter */
 
+        /* Sort and Filter */
+
         .f-s {
             padding-top: 10px;
         }
@@ -233,7 +235,7 @@ Tags: Memories museum of myslef.
             width: 10px;
         }
 
-        .border {
+        .bordersf {
             border:0;
             border: 1px solid rgb(109, 110, 113);
             width: auto;

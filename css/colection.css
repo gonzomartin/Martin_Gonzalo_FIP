@@ -320,6 +320,7 @@ _____________________________________ */
             justify-content: center;
         }
 
+
         .postal-block {
             position: absolute;
             max-width: 380px;
@@ -328,6 +329,7 @@ _____________________________________ */
             right: 110px;
             bottom: 70px;
         }
+
 
         .c-fingo .postal-block{
             max-width: 390px;
