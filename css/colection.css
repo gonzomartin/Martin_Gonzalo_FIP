@@ -1,6 +1,6 @@
 /*
 Style Name: Site Build 
-Description: Final Integraded Project - MainPage CSS
+Description: Final Integraded Project - Collections CSS
 Author: Gonzalo Martin 
 Version: 1.0
 Tags: Memories museum of myslef.
@@ -197,14 +197,15 @@ _____________________________________ */
             font-size: 40px;
         }
 
-        .navigation-history h3{
+       .navigation-history h3{
             color: rgb(109, 110, 113);
             font-size: 15px;
             padding-left: 20px;
-            font-family: GeromaLight;
+            font-family: GeromaRegular;
         }
         .navigation-history span {
             color: rgb(152, 153, 155);
+            font-family: GeromaLight;
         }
 
         .navigation-history {
@@ -349,7 +350,7 @@ _____________________________________ */
             padding: 20px 0 30px 300px;
         }
 
-        .who-square {
+        .end-square {
             display: flex;
             grid-column: 2 / span 2;
             justify-content: center;
@@ -365,6 +366,11 @@ _____________________________________ */
 
         .colections-grid {
             padding: 20px 0 0 0;
+        }
+
+        .gallery-grid a {
+            text-decoration: none;
+            color: #ffffff;
         }
         
 
