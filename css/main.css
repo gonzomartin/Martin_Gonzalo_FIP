@@ -75,7 +75,6 @@ Tags: Memories museum of myslef.
             background-color: rgb(35, 31, 32);
         }
 
-=======
 
         .head {
             display: grid;
@@ -98,8 +97,6 @@ Tags: Memories museum of myslef.
 
         .two-items {
             display: grid;
-            
-=======
             grid-template-columns: repeat(2, 1fr);
             justify-content: space-evenly;
             row-gap: 2em;
@@ -127,7 +124,6 @@ Tags: Memories museum of myslef.
         }
 
 
-=======
 
         .shortlogo img {
             width: 40px;
@@ -227,9 +223,6 @@ Tags: Memories museum of myslef.
             padding: 0;
             margin: 0;
             margin-top: -10px;
-
-=======
-
         }
 
         .h-block h4 {
