@@ -1,12 +1,10 @@
 /*
 Style Name: Site Build 
-Description: Final Integraded Project - MainPage CSS
+Description: Final Integraded Project - Stickers CSS
 Author: Gonzalo Martin 
 Version: 1.0
 Tags: Memories museum of myslef.
 */
-
-
 
 
 /* _____________________________________
@@ -34,9 +32,9 @@ Tags: Memories museum of myslef.
         padding: 0;
     }
 
-/*------------ End Reset ------------*/
+    /*------------ End Reset ------------*/
 
-/*--------------- General ------------------*/
+    /*--------------- General ------------------*/
 
     .hidden {
         display: none;
@@ -57,29 +55,30 @@ Tags: Memories museum of myslef.
         src: url("../Assets/font/Georama-Bold.ttf");
     } 
 
-/*--------------- End General --------------*/
+    @font-face {
+        font-family: GeromaBoldItalic;
+        src: url("../Assets/font/Georama-BoldItalic.ttf");
+    }
 
-/* _____________________________________
+    /*--------------- End General --------------*/
 
-   02. CSS Grid
-   _____________________________________ */
+    /* _____________________________________
 
+    02. CSS Grid
+    _____________________________________ */
 
-     
 
     @supports (grid-area: auto) {
 
 
-        .homepage {
+        .donfingo-pack {
             max-width: none;
-            background-color: rgb(35, 31, 32);
+            background-color: rgb(255, 255, 255);
         }
-
-=======
 
         .head {
             display: grid;
-			      grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+                grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
         }
 
         header {
@@ -92,14 +91,12 @@ Tags: Memories museum of myslef.
         
         .one-item {
             display: grid;
-            grid-column: 2 / span 2;
+            grid-column: 2 /  2;
             grid-template-columns: 1fr;
         }
 
         .two-items {
             display: grid;
-            
-=======
             grid-template-columns: repeat(2, 1fr);
             justify-content: space-evenly;
             row-gap: 2em;
@@ -114,7 +111,7 @@ Tags: Memories museum of myslef.
             column-gap: 2em;
         }
 
-        /* Nav Bar Setup Start */
+    /* Nav Bar Setup Start */
 
         .head {
             display: grid;
@@ -126,8 +123,6 @@ Tags: Memories museum of myslef.
             grid-column: 1 / span 1;
         }
 
-
-=======
 
         .shortlogo img {
             width: 40px;
@@ -174,244 +169,269 @@ Tags: Memories museum of myslef.
             background-color: rgb(255, 255, 255);
             transition: all .2s ease-in-out;
         }
+    }
 
-        /* Nav Bar Setup Finish */
+    /* Nav Bar Setup Finish */
 
-        /* Initial seccion start */
+    /* Navigation history setup start */
 
-        .initial-section {
-            display: grid;
-            margin: 0 0;
-        }
-
-        .initialBg img {
-            width: 100%;
-        }
-
-        .initialBg {
-            display: grid;
-            grid-column: 1 / 4;
-            margin-bottom: 20px;
-        }
-
-
-        .initialBg .inisec-logomu {
-            align-self: flex-start;
-            justify-self: center;
-            padding-bottom: 50px;
-            max-width: 500px;
-        }
-        
-        /* highlights gallery start */
-
-        .h-lighter , .h-embordery , .h-stamp {
-            display: grid;
-            justify-content: center;
-            box-sizing: content-box;
-        }
-
-        .h-hover:hover {
-            transform: scale(1.05);
-            outline: 2px solid rgb(199, 199, 199);
-        }
-
-        .h-hover {
-            
-            padding: 20px;
-            transition: all .15s ease-in-out;
-        }
-
-        .h-block {
-            max-width: 430px;
-            background: rgb(255, 255, 255);
-            padding: 0;
-            margin: 0;
-            margin-top: -10px;
-
-=======
-
-        }
-
-        .h-block h4 {
-            color: #58595B;
-            padding: 30px 0 0 30px;
-            font-family: GeromaBold;
-            font-size: 40px;
-        }
-
-        .h-block p {
+        .navigation-history h3{
+            color: rgb(109, 110, 113);
             font-size: 15px;
-            color: rgb(35, 31, 32);
-
-            padding: 0 30px 10px 30px;
+            padding-left: 20px;
+            font-family: GeromaRegular;
         }
-
-        .h-block img {
-            width: 40px;
-            margin: 10px 0 30px 360px;
-        }
-      
-        .h-hover a {
-            text-decoration: none;
-        }
-
-        .Highlights {
-            grid-column: 1;
-            padding: 20px;
-        }
-
-        .Subtitles {
+        .navigation-history span {
+            color: rgb(152, 153, 155);
             font-family: GeromaLight;
-            font-size: 25px;
-            color: #ffffff;
         }
 
-        .Subtitles span {
-            font-family: GeromaBold;
-            font-size: 30px;
-        } 
-
-        .borderline {
-            border-bottom: 2px solid rgb(199, 199, 199);;
-            margin-left: 150px;
-            margin-bottom: 5px;
-
-        }
-
-        .h-borderline {
-            padding-bottom: 50px;
-        }
-        
-        .inlineitems a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        
-
-
-        
-        /* Memories Banner */
-
-        .memories-banner {
-            display: grid;
-            grid-column: span 4;
-            padding: 100px 20px 100px 20px;
-        }
-
-        .memories-banner img {
-            max-width: 100%;
-        }
-
-        /* Collections */
-
-        .collections {
-            grid-column: 1;
-            padding: 20px;
-        }   
-
-        .inlineitems {
-            padding: 20px;
-        }
-        .c-borderline .borderline {
-            border-bottom: 2px solid rgb(199, 199, 199);;
-            margin-left: 170px;
-        }
-
-        .c-borderline {
-            padding-bottom: 30px;
-        }
-        
-        .collections h3 {
-            font-family: GeromaBold;
-            font-size: 30px;
+        .navigation-history {
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
         .gridline {
             display: grid;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         .bottom-line {
             grid-column: 1 / span 1;
+            border-bottom: 1.5px solid rgb(152, 153, 155);
+        }
+    /* Navigation history setup end */
+
+    /* Image Display section start */
+
+        .i-display {
+            display: grid;
+        }
+
+        .i-border {           
+            border: 1px solid rgb(152, 153, 155);
+            margin: 20px;
+        }
+
+        .i-box {
+            display: grid;
+            justify-content: center;
+        }
+
+        .i-box img {
+            max-height: 1000px;
+            padding: 10px;
+        }
+        
+        .id-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-bottom: 20px;
+        }
+
+        .id-border {
+            display: grid;
+            grid-column: 2;
+            border: 1px solid rgb(152, 153, 155);
+        }
+        
+        .id-box {
+            padding: 10px;
+        }
+
+        .id-box a {
+            margin: 1px 0 -5px 0px;
+        }
+
+        .donf1, .donf3 {
+            display: grid;
+            justify-content: center;
+            align-content: space-around;
+            filter: grayscale(100%);
+        }
+
+        .donf1:hover, .donf3:hover {
+            transform: scale(1.1);
+            transition: all .1s ease-in-out;
+            filter: grayscale(0%);
+        }
+
+        .donf2 {
+            display: grid;
+            justify-content: center;
+            align-content: space-around;
+            scale: 1.1;
+        }
+
+      /* Image Display section end */
+
+      /* textinfo section start */
+
+        .info-box {
+            display: grid;
+            padding-bottom: 40px;
+            padding-top: 40px;
+        }
+
+        .info-box h4 {
+            color: rgb(109, 110, 113);;
+            padding-left: 20px;
+            font-family: GeromaBold;
+            font-size: 40px;
+
+        }
+
+        .info-box p {
+            color: rgb(109, 110, 113);
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+
+        .principal-info a {
+            text-decoration: none;
+            font-family: GeromaboldItalic;
+            color: rgb(35, 31, 32);
+
+        }
+        .meta-info {
+            display: grid;
+            align-content: center;
+            background-color: rgb(35, 31, 32);
+            margin-right: 20px;
+            
+        }
+
+        .meta-info ul {
+            list-style-type: none;
+            font-family: GeromaLight;
+            color: #ffffff;
             padding: 20px;
-            border-bottom: 2px solid rgb(199, 199, 199);
-            width: 1800px;
+            padding-left: 50px;
+        }
+
+        .meta-info ul span {
+            font-family: GeromaBoldItalic;
+        }
+
+        
+    /* backbutton start */
+
+
+        .back-button {
+            padding-bottom: 40px;
+            padding-top: 40px;
         }
 
 
-        .c-postal , .c-ticket , .c-fingo, .c-sketch, .c-university, .c-magnets {
-            position: relative;
+        .b-button {
+            display: grid;
+            justify-content: center;
+        }
+        .b-button h3 {
+            color: #ffffff;
+        }
+
+        .b-button img {
+            max-width: 30px;
+            margin-right: 10px;
+        }
+
+        .border {
+            display: inline-flex;
+            border:0;
+            background-color: rgb(35, 31, 32);
+            width: 190px;
+            padding: 10px;
+        }
+
+        .border:hover {
+            cursor: pointer;
+        }
+
+        /* backbutton end */
+
+        /* textinfo section end */
+
+
+        /* CouldInterest Gallery Start */
+
+        .Could-interest-gallery {
+            grid-column: 1;
+        }
+
+        .c-borderline .borderline {
+            border-bottom: 2px solid rgb(109, 110, 113);
+            margin-left: 250px;
+            margin-right: 20px;
+        }
+
+        .c-borderline {
+            padding-bottom: 10px;
+        }
+
+        .Subtitles {
+            font-family: GeromaBold;
+            font-size: 25px;
+            color: rgb(35, 31, 32);
+            padding-left: 20px;
+        }
+
+        .inlineitems {
+            padding: 40px;
+        }
+
+        .s-border {  
+            padding: 10px;
+            transition: all .1s ease-in-out;
+        }
+
+        .s-border img {
+            width: 500px;
+        }
+            
+
+        .s-border a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .s-border:hover {
+            transform: scale(1.02);
+            
+        }
+
+        .s-casetera, .s-graficaR, .s-sumotype, .s-comunication, .s-libre, .s-sara {
             display: inline;
             justify-content: center;
         }
 
-        .postal-block {
-            position: absolute;
-            max-width: 380px;
-            background: rgb(35, 31, 32);
+        .s-block {
+            max-width: 500px;
+            background-color: rgb(35, 31, 32);
             padding: 0;
             right: 110px;
-            bottom: 70px;
+            bottom: 90px;
+            margin-top: -10px;
         }
 
-        .c-fingo .postal-block{
-            max-width: 390px;
-            right: 105px;
-        }
-
-        .postal-block h4 {
+        .s-block h4 {
             padding: 30px 0 0 30px;
             font-family: GeromaBold;
             font-size: 40px;
         }
 
-        .postal-block p {
+        .s-block p {
             padding: 0 30px 0 30px;
         }
 
 
-        .postal-block img {
-            width: 40px;
-            padding: 20px 0 30px 300px;
+        .s-block img {
+            max-width: 40px;
+            padding: 20px 0 30px 420px;
         }
 
-        /* Who i Am */
-
-        .who-i-am {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-
-        .portrait {
-            grid-column: 2 / span 2;
-            padding-top: 40px;
-
-        }
-        
-        .portrait img {
-            width: 100%;
-            padding-bottom: 20px;
-        }
-
-        .who-i-am-title {
-            font-family: GeromaBold;
-            font-size: 30px;
-        }
-
-        .who-p {
-            display: grid;
-            grid-column: 2 / span 2;
-        }
-        
-        .who-p p {
-            font-size: 15px;
-        }
-
-        .who-p span {
-            font-family: GeromaBold;
-        }
-
-        .who-square {
+        .end-square {
             display: flex;
             grid-column: 2 / span 2;
             justify-content: center;
@@ -422,12 +442,10 @@ Tags: Memories museum of myslef.
         .square2 {
             width: 20px;
             height: 20px;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(35, 31, 32);
         }
 
-        
-
-/* Footer start */
+        /* Footer start */
 
         .foot {
             grid-template-columns: 1fr(repeat(3));
@@ -482,5 +500,9 @@ Tags: Memories museum of myslef.
             align-items: center;
         }
 
-    }    
+
+
+
+
+
 

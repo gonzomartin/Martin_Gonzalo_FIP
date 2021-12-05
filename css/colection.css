@@ -1,12 +1,10 @@
 /*
 Style Name: Site Build 
-Description: Final Integraded Project - MainPage CSS
+Description: Final Integraded Project - Collections CSS
 Author: Gonzalo Martin 
 Version: 1.0
 Tags: Memories museum of myslef.
 */
-
-
 
 
 /* _____________________________________
@@ -61,25 +59,21 @@ Tags: Memories museum of myslef.
 
 /* _____________________________________
 
-   02. CSS Grid
-   _____________________________________ */
+02. CSS Grid
+_____________________________________ */
 
-
-     
 
     @supports (grid-area: auto) {
 
 
-        .homepage {
+        .CollectionsPage {
             max-width: none;
-            background-color: rgb(35, 31, 32);
+            background-color: rgb(255, 255, 255);
         }
-
-=======
 
         .head {
             display: grid;
-			      grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+                grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
         }
 
         header {
@@ -98,8 +92,6 @@ Tags: Memories museum of myslef.
 
         .two-items {
             display: grid;
-            
-=======
             grid-template-columns: repeat(2, 1fr);
             justify-content: space-evenly;
             row-gap: 2em;
@@ -114,7 +106,7 @@ Tags: Memories museum of myslef.
             column-gap: 2em;
         }
 
-        /* Nav Bar Setup Start */
+/* Nav Bar Setup Start */
 
         .head {
             display: grid;
@@ -126,8 +118,6 @@ Tags: Memories museum of myslef.
             grid-column: 1 / span 1;
         }
 
-
-=======
 
         .shortlogo img {
             width: 40px;
@@ -175,12 +165,11 @@ Tags: Memories museum of myslef.
             transition: all .2s ease-in-out;
         }
 
-        /* Nav Bar Setup Finish */
+/* Nav Bar Setup Finish */
 
-        /* Initial seccion start */
+/* Initial seccion start */
 
         .initial-section {
-            display: grid;
             margin: 0 0;
         }
 
@@ -191,159 +180,146 @@ Tags: Memories museum of myslef.
         .initialBg {
             display: grid;
             grid-column: 1 / 4;
-            margin-bottom: 20px;
         }
 
 
-        .initialBg .inisec-logomu {
-            align-self: flex-start;
-            justify-self: center;
-            padding-bottom: 50px;
-            max-width: 500px;
-        }
-        
-        /* highlights gallery start */
-
-        .h-lighter , .h-embordery , .h-stamp {
-            display: grid;
-            justify-content: center;
-            box-sizing: content-box;
+        .initialBg {
+            padding-bottom: 10px;
+            max-width: 100%;
         }
 
-        .h-hover:hover {
-            transform: scale(1.05);
-            outline: 2px solid rgb(199, 199, 199);
-        }
-
-        .h-hover {
-            
-            padding: 20px;
-            transition: all .15s ease-in-out;
-        }
-
-        .h-block {
-            max-width: 430px;
-            background: rgb(255, 255, 255);
-            padding: 0;
-            margin: 0;
-            margin-top: -10px;
-
-=======
-
-        }
-
-        .h-block h4 {
-            color: #58595B;
-            padding: 30px 0 0 30px;
+        .is-text {
+            position: absolute;
+            justify-content: left;
+            top: 1250px;
+            padding-left: 20px;
             font-family: GeromaBold;
             font-size: 40px;
         }
 
-        .h-block p {
+       .navigation-history h3{
+            color: rgb(109, 110, 113);
             font-size: 15px;
-            color: rgb(35, 31, 32);
-
-            padding: 0 30px 10px 30px;
+            padding-left: 20px;
+            font-family: GeromaRegular;
         }
-
-        .h-block img {
-            width: 40px;
-            margin: 10px 0 30px 360px;
-        }
-      
-        .h-hover a {
-            text-decoration: none;
-        }
-
-        .Highlights {
-            grid-column: 1;
-            padding: 20px;
-        }
-
-        .Subtitles {
+        .navigation-history span {
+            color: rgb(152, 153, 155);
             font-family: GeromaLight;
-            font-size: 25px;
-            color: #ffffff;
         }
 
-        .Subtitles span {
-            font-family: GeromaBold;
-            font-size: 30px;
-        } 
-
-        .borderline {
-            border-bottom: 2px solid rgb(199, 199, 199);;
-            margin-left: 150px;
-            margin-bottom: 5px;
-
-        }
-
-        .h-borderline {
-            padding-bottom: 50px;
-        }
-        
-        .inlineitems a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        
-
-
-        
-        /* Memories Banner */
-
-        .memories-banner {
-            display: grid;
-            grid-column: span 4;
-            padding: 100px 20px 100px 20px;
-        }
-
-        .memories-banner img {
-            max-width: 100%;
-        }
-
-        /* Collections */
-
-        .collections {
-            grid-column: 1;
-            padding: 20px;
-        }   
-
-        .inlineitems {
-            padding: 20px;
-        }
-        .c-borderline .borderline {
-            border-bottom: 2px solid rgb(199, 199, 199);;
-            margin-left: 170px;
-        }
-
-        .c-borderline {
-            padding-bottom: 30px;
-        }
-        
-        .collections h3 {
-            font-family: GeromaBold;
-            font-size: 30px;
+        .navigation-history {
+            padding-bottom: 10px;
         }
 
         .gridline {
             display: grid;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         .bottom-line {
             grid-column: 1 / span 1;
-            padding: 20px;
             border-bottom: 2px solid rgb(199, 199, 199);
-            width: 1800px;
         }
 
+/* Sort and Filter */
 
-        .c-postal , .c-ticket , .c-fingo, .c-sketch, .c-university, .c-magnets {
+        .f-s {
+            padding-top: 10px;
+        }
+
+        .sort img, .filter img {
+            width: 10px;
+        }
+
+        .border {
+            border:0;
+            border: 1px solid rgb(109, 110, 113);
+            width: auto;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .filter {
+            display: grid;
+            justify-content: right;
+            padding-right: 20px;
+        }
+
+        .sort {
+            padding-left: 20px;
+        }
+
+        .sort button:hover, .filter button:hover {
+            background: rgb(255, 255, 255);
+        }
+        
+        .sort button, .filter button {
+            background: rgb(230, 230, 230);
+        }
+
+/* Initial seccion end */
+
+/* Collections Grid */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 30px;
+            column-gap: 35px;
+        }
+
+        .c-postal {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .c-fingo {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .c-ticket {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .c-sketch {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .c-university {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .c-magnets {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .c-poster {
+            grid-column: 1;
+            grid-row: 3; 
+        }
+
+        .c-teddy {
+            grid-column: 2;
+            grid-row: 3; 
+        }
+
+        .c-letter {
+            grid-column: 3;
+            grid-row: 3; 
+        }
+
+        .c-postal , .c-ticket , .c-fingo, .c-sketch, .c-university, .c-magnets, .c-poster, .c-teddy, .c-letter {
+            display: grid;
             position: relative;
-            display: inline;
             justify-content: center;
         }
+
 
         .postal-block {
             position: absolute;
@@ -353,6 +329,7 @@ Tags: Memories museum of myslef.
             right: 110px;
             bottom: 70px;
         }
+
 
         .c-fingo .postal-block{
             max-width: 390px;
@@ -375,43 +352,7 @@ Tags: Memories museum of myslef.
             padding: 20px 0 30px 300px;
         }
 
-        /* Who i Am */
-
-        .who-i-am {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-
-        .portrait {
-            grid-column: 2 / span 2;
-            padding-top: 40px;
-
-        }
-        
-        .portrait img {
-            width: 100%;
-            padding-bottom: 20px;
-        }
-
-        .who-i-am-title {
-            font-family: GeromaBold;
-            font-size: 30px;
-        }
-
-        .who-p {
-            display: grid;
-            grid-column: 2 / span 2;
-        }
-        
-        .who-p p {
-            font-size: 15px;
-        }
-
-        .who-p span {
-            font-family: GeromaBold;
-        }
-
-        .who-square {
+        .end-square {
             display: flex;
             grid-column: 2 / span 2;
             justify-content: center;
@@ -422,8 +363,18 @@ Tags: Memories museum of myslef.
         .square2 {
             width: 20px;
             height: 20px;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(35, 31, 32);
         }
+
+        .colections-grid {
+            padding: 20px 0 0 0;
+        }
+
+        .gallery-grid a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
 
         
 
@@ -481,6 +432,4 @@ Tags: Memories museum of myslef.
             display: grid;
             align-items: center;
         }
-
-    }    
-
+    }
