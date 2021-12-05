@@ -75,6 +75,7 @@ Tags: Memories museum of myslef.
             background-color: rgb(35, 31, 32);
         }
 
+=======
 
         .head {
             display: grid;
@@ -97,6 +98,8 @@ Tags: Memories museum of myslef.
 
         .two-items {
             display: grid;
+            
+=======
             grid-template-columns: repeat(2, 1fr);
             justify-content: space-evenly;
             row-gap: 2em;
@@ -123,6 +126,8 @@ Tags: Memories museum of myslef.
             grid-column: 1 / span 1;
         }
 
+
+=======
 
         .shortlogo img {
             width: 40px;
@@ -223,6 +228,8 @@ Tags: Memories museum of myslef.
             margin: 0;
             margin-top: -10px;
 
+=======
+
         }
 
         .h-block h4 {
@@ -234,7 +241,8 @@ Tags: Memories museum of myslef.
 
         .h-block p {
             font-size: 15px;
-            color: #808285;
+            color: rgb(35, 31, 32);
+
             padding: 0 30px 10px 30px;
         }
 
@@ -242,6 +250,7 @@ Tags: Memories museum of myslef.
             width: 40px;
             margin: 10px 0 30px 360px;
         }
+      
         .h-hover a {
             text-decoration: none;
         }
@@ -382,7 +391,6 @@ Tags: Memories museum of myslef.
         .portrait img {
             width: 100%;
             padding-bottom: 20px;
-
         }
 
         .who-i-am-title {
@@ -402,7 +410,6 @@ Tags: Memories museum of myslef.
         .who-p span {
             font-family: GeromaBold;
         }
-
 
         .who-square {
             display: flex;
@@ -474,5 +481,6 @@ Tags: Memories museum of myslef.
             display: grid;
             align-items: center;
         }
+
     }    
 
